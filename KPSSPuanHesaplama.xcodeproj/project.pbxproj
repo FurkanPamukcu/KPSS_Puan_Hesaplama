@@ -6,14 +6,26 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DCC611DF2DE31F1A00C35953 /* KPSSPuanHesaplamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC611DC2DE31F1A00C35953 /* KPSSPuanHesaplamaApp.swift */; };
+		DCC611E02DE31F1A00C35953 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC611DA2DE31F1A00C35953 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DCC611BE2DE319F100C35953 /* KPSSPuanHesaplama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPSSPuanHesaplama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC611DA2DE31F1A00C35953 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCC611DC2DE31F1A00C35953 /* KPSSPuanHesaplamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPSSPuanHesaplamaApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		DCC611C02DE319F100C35953 /* KPSSPuanHesaplama */ = {
+		DCC611D12DE31F1300C35953 /* Preview Content */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = KPSSPuanHesaplama;
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCC611DD2DE31F1A00C35953 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +44,7 @@
 		DCC611B52DE319F100C35953 = {
 			isa = PBXGroup;
 			children = (
-				DCC611C02DE319F100C35953 /* KPSSPuanHesaplama */,
+				DCC611CF2DE31EC000C35953 /* KPSSPuanHesaplama */,
 				DCC611BF2DE319F100C35953 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +55,25 @@
 				DCC611BE2DE319F100C35953 /* KPSSPuanHesaplama.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DCC611CF2DE31EC000C35953 /* KPSSPuanHesaplama */ = {
+			isa = PBXGroup;
+			children = (
+				DCC611E12DE31F1E00C35953 /* Resources */,
+				DCC611DD2DE31F1A00C35953 /* Views */,
+				DCC611D12DE31F1300C35953 /* Preview Content */,
+			);
+			path = KPSSPuanHesaplama;
+			sourceTree = "<group>";
+		};
+		DCC611E12DE31F1E00C35953 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DCC611DA2DE31F1A00C35953 /* Assets.xcassets */,
+				DCC611DC2DE31F1A00C35953 /* KPSSPuanHesaplamaApp.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -61,7 +92,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				DCC611C02DE319F100C35953 /* KPSSPuanHesaplama */,
+				DCC611D12DE31F1300C35953 /* Preview Content */,
+				DCC611DD2DE31F1A00C35953 /* Views */,
 			);
 			name = KPSSPuanHesaplama;
 			packageProductDependencies = (
@@ -86,11 +118,11 @@
 				};
 			};
 			buildConfigurationList = DCC611B92DE319F100C35953 /* Build configuration list for PBXProject "KPSSPuanHesaplama" */;
-			developmentRegion = en;
+			developmentRegion = tr;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				tr,
 			);
 			mainGroup = DCC611B52DE319F100C35953;
 			minimizedProjectReferenceProxies = 1;
@@ -109,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC611E02DE31F1A00C35953 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC611DF2DE31F1A00C35953 /* KPSSPuanHesaplamaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,11 +289,13 @@
 				DEVELOPMENT_TEAM = H5RM776K4X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Puan Hesaplama";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,11 +320,13 @@
 				DEVELOPMENT_TEAM = H5RM776K4X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Puan Hesaplama";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
