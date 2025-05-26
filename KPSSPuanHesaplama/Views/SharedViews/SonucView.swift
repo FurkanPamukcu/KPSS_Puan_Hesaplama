@@ -8,89 +8,59 @@
 import SwiftUI
 
 struct SonucView: View {
+    let sonuc2022:      Double
+    let sonucEB2022:    Double
+    let sonucOABT2022 : Double?
+    
+    let sonuc2023:      Double
+    let sonucEB2023:    Double
+    let sonucOABT2023 : Double?
     
     @Environment(\.dismiss) private var dismiss
-    let sonuc2023: Double
-    let sonuc2024: Double
-    let sonucEB2023: Double
-    let sonucEB2024: Double
-    let sonucOABT2023: Double?
-    let sonucOABT2024: Double?
-
     
     var body: some View {
         
         NavigationStack {
             VStack {
-                List{
+                List {
+                    
                     Section {
-                        Text("2023 P3 Puaniniz: \(sonuc2023, specifier: "%.3f")")
+                        Text("2023 P3(Memur): \(sonuc2023, specifier: "%.3f")")
+                        Text("2023 P10(Öğretmen): \(sonucEB2023, specifier: "%.3f")")
+                        if sonucOABT2023 != nil {
+                            Text("2023 P121(Alan): \(sonucOABT2023 ?? 0, specifier: "%.3f")")
+                        }
+                    } header: {
+                        Text("2023 KPSS")
                             .bold()
-                        Text("2024 P3 Puaniniz: \(sonuc2024, specifier: "%.3f")")
-                            .bold()
-                    }
-                    header: {
-                        Text("P3 (Memur) KPSS")
-                            .font(.headline)
-                            .fontWeight(.bold)
-                            .foregroundStyle(.main)
                     }
                     
                     Section {
-                        Text("2023 P10 Puaniniz: \(sonucEB2023, specifier: "%.3f")")
+                        Text("2022 P3(Memur): \(sonuc2022, specifier: "%.3f")")
+                        Text("2022 P10(Öğretmen): \(sonucEB2022, specifier: "%.3f")")
+                        if sonucOABT2022 != nil {
+                            Text("2022 P121(Alan): \(sonucOABT2022 ?? 0, specifier: "%.3f")")
+                        }
+                        
+                    } header: {
+                        Text("2022 KPSS")
                             .bold()
-                        Text("2024 P10 Puaniniz: \(sonucEB2024, specifier: "%.3f")")
-                            .bold()
-                    }
-                    header: {
-                        Text("P10 (Ogretmen) KPSS")
-                            .font(.headline)
-                            .fontWeight(.bold)
-                            .foregroundStyle(.main)
-                    }
-                    
-                    Section {
-                        if sonucOABT2023 != nil{
-                            Text("2023 P121 Puaniniz: \(sonucOABT2023 ?? 0, specifier: "%.3f")")
-                                .bold()
-                        }
-                        if sonucOABT2024 != nil{
-                            Text("2024 P121 Puaniniz: \(sonucOABT2024 ?? 0, specifier: "%.3f")")
-                                .bold()
-                            
-                        }
-                    }
-                    header: {
-                        if sonucOABT2023 != nil || sonucOABT2024 != nil {
-                            Text("P121 (OABT) KPSS")
-                                .font(.headline)
-                                .fontWeight(.bold)
-                                .foregroundStyle(.main)
-                        }
                     }
                 }
             }
-            .navigationTitle("Sonuc")
-            .toolbar{
-                ToolbarItem(placement: .topBarLeading, content: {
-                    Button {
+            .navigationTitle("Sonuç")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem{
+                    Button("Kapat", systemImage: "xmark") {
                         dismiss()
-                    } label: {
-                        Image(systemName: "xmark")
-                            .tint(Color.main)
-                            .frame(width: 50, height: 50)
-                            .background(Material.thin)
-                            .cornerRadius(10)
-                            .padding(.vertical, 5)
                     }
-
-                })
+                }
             }
-            .toolbar(.hidden, for: .tabBar)
         }
     }
 }
 
 #Preview {
-    SonucView(sonuc2023: 0, sonuc2024: 0, sonucEB2023: 0, sonucEB2024: 0, sonucOABT2023: 0, sonucOABT2024: 0)
+    SonucView(sonuc2022: 0, sonucEB2022: 0, sonucOABT2022: 0, sonuc2023: 0, sonucEB2023: 0, sonucOABT2023: 0)
 }

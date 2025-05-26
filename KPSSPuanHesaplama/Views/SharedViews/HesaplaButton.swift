@@ -11,24 +11,24 @@ struct HesaplaButton: View {
     
     let title: String
     let action: () -> Void
-    
     var body: some View {
-        Button {
+        
+        Button(action: {
             action()
-        } label: {
-            Label("\(title)", systemImage: "plus.forwardslash.minus")
-                .foregroundStyle(.white)
+        }, label: {
+            Label(title, systemImage: "plus.forwardslash.minus")
                 .font(.title)
-                .fontWeight(.semibold)
+                .foregroundStyle(.white)
                 .frame(maxWidth: .infinity)
-        }
+        })
         .buttonStyle(.borderedProminent)
         .tint(.main)
+        
     }
 }
 
 #Preview {
     HesaplaButton(title: "Hesapla", action: {
-        print("Hesaplama Basarili")
+        print("İlk SwiftUI Uygulamam")
     })
 }
