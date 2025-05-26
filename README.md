@@ -24,4 +24,4 @@
 
 ## 📷 Ekran Görüntüleri
 
-!(KPSSPuanHesaplama.png)
+![Ekranlar](KPSSPuanHesaplama.png)
