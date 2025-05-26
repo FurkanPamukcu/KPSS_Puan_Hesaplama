@@ -47,7 +47,7 @@ struct UIOnboardingHelper {
         return .init(icon: .init(named: "onboarding-notice-icon"),
                      text: "Geçmiş yılların istatistikleri kullanarak hazırlanmıştır.",
                      linkTitle: "Sorularınız için",
-                     link: "https://www.yuumamobile.com/hakkimda",
+                     link: "https://www.linkedin.com/in/furkan-pamukcu-155516324/",
                      tint: .main)
     }
     
