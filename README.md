@@ -1,3 +1,8 @@
+## 📷 Ekran Görüntüleri
+
+![Ekranlar](KPSSPuanHesaplama.png)
+
+
 # KPSS Puan Hesaplama
 
 📱 **KPSS Puan Hesaplama**, Türkiye'deki Kamu Personeli Seçme Sınavı (KPSS) için kullanıcıların doğru, yanlış ve net sayılarına göre tahmini puanlarını kolayca hesaplamalarını sağlayan sade ve işlevsel bir iOS uygulamasıdır.
@@ -22,6 +27,3 @@
 - **Firebase**
 - **Observation Macro**
 
-## 📷 Ekran Görüntüleri
-
-![Ekranlar](KPSSPuanHesaplama.png)
